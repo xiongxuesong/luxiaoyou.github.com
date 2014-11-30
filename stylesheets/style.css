@@ -1,7 +1,7 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 *{margin:0;padding:0;}
-.container{ width:800px; height:200px; margin:30px auto;overflow:hidden; background:#000; position:relative;}
+.container{ width:800px; height:200px; margin:30px auto;overflow:hidden; background:#000; position:relative;opacity: 0.1; }
 .eyesBoxs{width:130px;height:70px;position:absolute;top:50px;}
 .pullLeft{left:100px;}
 .pullRight{right:100px;}
