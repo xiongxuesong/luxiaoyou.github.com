@@ -1,9 +1,16 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="gb2312">
-        <title>留言板</title>
-		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<head>
+	<title>留言板</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	
         <style type="text/css">
         *{margin:0; padding:0;}
         body,input{font-size:14px; line-height:24px; color:#333; font-family:Microsoft yahei, Song, Arial, Helvetica, Tahoma, Geneva;}
@@ -90,17 +97,25 @@
             document.getElementById("clearBt").onclick = function(){Storage.clearData();}//清空所有已保存的数据
         }
         </script>
-    </head>
-    
-    <body background="../images/blogbg.png">
-        <h1>留言板</h1>
-        <div id="content">
-            <div id="post">
-                <textarea class="transition"></textarea>
-                <input id="postBt" type="button" value="发表评论"/>
-                <input id="clearBt" type="button" value="清空所有"/>
-            </div>
-            <div id="comment"></div>
-        </div>
-    </body>
+</head>
+<body background="../images/blogbg.png">
+
+	<ul class="nav nav-tabs">
+	<li class="active"><a href="../index.html">主页</a></li>
+	<li><a href="#">相册</a></li>
+	<li><a href="#">生活</a></li>
+	<li><a href="#">博客</a></li>
+	<li><a href="../webpages/MessageBoard.html" target="_blank">留言</a></li>
+	<li><a href="../webpages/about.html" target="_blank">鲨鱼宠物</a></li>
+	</ul>
+	<h1>留言板</h1>
+     <div id="content">
+         <div id="post">
+             <textarea class="transition"></textarea>
+             <input id="postBt" type="button" value="发表评论"/>
+             <input id="clearBt" type="button" value="清空所有"/>
+         </div>
+         <div id="comment"></div>
+     </div>
+</body>
 </html>
