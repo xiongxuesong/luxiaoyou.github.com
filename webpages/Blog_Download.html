@@ -10,6 +10,7 @@
 		<title>友哥博客 - 下载</title> <!--博客题目 -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"100"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 		<style type="text/css">
 			.downloadDH {float:left;width:395px;color:#000;border:1px #000 solid; background:#FFF;opacity: 0.5;margin: 1em 0.5em 0.5em 0em;}
@@ -18,10 +19,50 @@
 			h2 {text-align: center;}
 			.downloadNR p  {margin : 10%;}
 		</style>
+		
+		<style type="text/css"> 
+			/* 浮动导航栏 Begin */ 
+			#floatMenu 
+			{
+			opacity: 0.8; 
+			padding-top: 5px; 
+			background-color:#000; 
+			border: 1px solid #000; 
+			position: absolute; 
+			top: 250px; 
+			left: 5px; 
+			margin-left: 0px; 
+			width: 86px; 
+			} 
+			#floatMenu ul 
+			{
+			text-align: center;
+			opacity: 0.8; 
+			margin-left: 0px; 
+			background-color:#000; 
+			list-style-type: none; 
+			padding:10px 
+			
+			} 
+			#floatMenu ul li a 
+			{ 
+			display: block; 
+			text-decoration: none; 
+			color: #FFF; 
+			} 
+			#floatMenu ul li a:hover 
+			{ 
+			color: #fff; 
+			background-color: #ff8000; 
+			} 
+			#floatMenu ul.menu1 li a:hover 
+			{ 
+			border-color: #09f; 
+			} 
+			/* 浮动导航栏 End */ 
+		</style> 
 	</head>
 		<body background="../images/blogbg.png">
-		<!--博客内容 -->
-		<!--logo -->
 		<h1>Windos版自由软件下载页</h1>
 		<hr>
 		<div class="downloadNR">
@@ -873,5 +914,31 @@
 				</ul>
 			</ul>
 		</div>
+		
+<div id="floatMenu"> 
+<ul class="menu1"> 
+<li><a href="../index.html">主页</a></li> 
+<li><a href="#" onclick="return false;">博客</a></li> 
+<li><a href="#" onclick="return false;">动态</a></li> 
+<li><a href="#" onclick="return false;">推荐</a></li> 
+<li><a href="#" onclick="return false;">创意</a></li> 
+<li><a href="#" onclick="return false;">生活</a></li> 
+<li><a href="#" onclick="return false;">收藏</a></li> 
+<li><a href="#" onclick="return false;">留言</a></li> 
+</ul> 
+</div> 
+<script type="text/javascript"> 
+//<![CDATA[ 
+var name = "#floatMenu"; 
+var menuYloc = null; 
+$(document).ready(function() { 
+menuYloc = parseInt($(name).css("top").substring(0, $(name).css("top").indexOf("px"))) 
+$(window).scroll(function() { 
+offset = menuYloc + $(document).scrollTop() + "px"; 
+$(name).animate({ top: offset }, { duration: 500, queue: false }); 
+}); 
+}); 
+//]]> 
+</script> 
 		</body>
 	</html>
