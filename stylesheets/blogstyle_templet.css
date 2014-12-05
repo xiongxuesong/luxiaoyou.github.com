@@ -1,6 +1,31 @@
 
 
 
-	body{background-image:url(../images/blogbg.png);}
-	h1{margin-bottom:15px; height:50px; line-height:50px; text-align:center; font-size:48px; color:#FFF;}
-	.center {width:1000px;margin:0 auto;background:#fff;opacity: 0.5;}
+	body
+	{
+	background-image:url(http://luxiaoyou.github.io/images/blogbg.png);
+	}
+	
+	h1
+	{
+	margin-bottom:15px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	font-size:48px;
+	color:#FFF;
+	}
+	
+	.center
+	{
+	width:1000px;
+	margin:0 auto;
+	background:#fff;
+	opacity: 0.5;
+	}
+	
+	/*Copyright*/
+	.copr
+	{
+	display:none;
+	}
