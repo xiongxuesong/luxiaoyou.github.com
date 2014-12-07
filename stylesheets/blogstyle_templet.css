@@ -3,7 +3,7 @@
 
 	body
 	{
-	background-image:url(http://luxiaoyou.github.io/images/blogbg.png);
+	background-image:url(../images/blogbg.png);
 	}
 	
 	h1
@@ -29,3 +29,13 @@
 	{
 	display:none;
 	}
+	
+	#footer {
+	text-align: center;
+	min-height: 15px;
+	_height: 15px;
+	border-top: 1px solid black;
+	margin-top: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
