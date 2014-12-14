@@ -1,9 +1,12 @@
 
 
-
 	body
 	{
-	background-image:url(../images/blogbg.png);
+	//background:#a9d06b;
+	background-image: url("http://area.sinaapp.com/bingImg");
+	background-image: url("http://bingimage.sinaapp.com");
+	background-repeat: no-repeat;
+	background-attachment:fixed;
 	}
 	
 	h1
