@@ -1,14 +1,13 @@
 			/* 浮动导航栏 开始*/ 
 			#floatMenu 
 			{
-				background-color: rgba(0, 0, 0, 0.8); 
-				padding-top: 5px; 
-				border: 1px solid #000; 
+				padding-top: 0px; 
+
 				position: absolute; 
 				top: 250px; 
-				left: 5px; 
+				left: 0px; 
 				margin-left: 0px; 
-				width: 86px; 
+				width: 80px; 
 			} 
 			#floatMenu ul 
 			{
@@ -16,7 +15,7 @@
 				background-color: rgba(0, 0, 0, 0.8); 
 				margin-left: 0px;  
 				list-style-type: none; 
-				padding:10px;
+				padding:0px;
 			} 
 			#floatMenu ul li a 
 			{ 
