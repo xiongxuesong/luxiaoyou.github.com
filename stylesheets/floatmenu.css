@@ -1,9 +1,8 @@
 			/* 浮动导航栏 开始*/ 
 			#floatMenu 
 			{
-				opacity: 0.8; 
+				background-color: rgba(0, 0, 0, 0.8); 
 				padding-top: 5px; 
-				background-color:#000; 
 				border: 1px solid #000; 
 				position: absolute; 
 				top: 250px; 
@@ -14,9 +13,8 @@
 			#floatMenu ul 
 			{
 				text-align: center;
-				opacity: 0.8; 
-				margin-left: 0px; 
-				background-color:#000; 
+				background-color: rgba(0, 0, 0, 0.8); 
+				margin-left: 0px;  
 				list-style-type: none; 
 				padding:10px;
 			} 
