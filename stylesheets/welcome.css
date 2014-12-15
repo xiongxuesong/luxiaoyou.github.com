@@ -1,0 +1,70 @@
+﻿		.welcome ul
+		{
+
+
+		margin:0;
+		padding:0;
+		}
+		
+		.welcome a:link,a:visited
+		{
+		text-decoration:none;
+		display:block;
+		font-weight:bold;
+		color:#FFFFFF;
+		background-color:rgba(0, 0, 0, 0);
+		width:343px;
+		text-align:center;
+		text-transform:uppercase;
+		}
+		
+		.welcome a:hover,a:active
+		{
+		background-color:#FF2400;
+
+		}
+		.welcome
+		{
+		margin:auto;
+		margin-top:15%;
+		text-align:center;
+		border:2px solid #a1a1a1;
+		padding:10px 40px; 
+		background-color:rgba(0, 0, 0, 0.5);
+		width:350px;
+		border-radius:25px;
+		}
+		body
+		{
+		background-image: url("http://area.sinaapp.com/bingImg");
+		background-image: url("http://bingimage.sinaapp.com");
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		}
+		#mqee
+		{
+		
+		margin:auto;
+		margin-top:5px;
+		text-align:center;
+		border-radius:5px;
+		padding:10px 40px; 
+		background-color:rgba(0, 0, 0, 0.5);
+		width:320px;
+
+		}
+		#mqee a:hover,a:active
+		{
+		background-color:#FF2400;
+		}
+		#mqee a:link,a:visited
+		{
+		color:#FFFFFF;
+		text-align:center;
+
+		text-transform:uppercase;
+		}
+		#mqee a
+		{
+		text-decoration:none;
+		}
