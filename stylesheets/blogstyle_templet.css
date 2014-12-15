@@ -3,8 +3,8 @@
 	body
 	{
 	//background:#a9d06b;
-	background-image: url("http://area.sinaapp.com/bingImg");
-	background-image: url("http://bingimage.sinaapp.com");
+	background-image: url("../images/bg.png");
+
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	}
