@@ -36,8 +36,7 @@
 		}
 		body
 		{
-		background-image: url("http://area.sinaapp.com/bingImg");
-		background-image: url("http://bingimage.sinaapp.com");
+		background-image: url("../images/bg3.jpg");
 		background-repeat: no-repeat;
 		background-attachment:fixed;
 		}
