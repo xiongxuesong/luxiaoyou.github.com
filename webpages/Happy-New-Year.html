@@ -1,19 +1,78 @@
 ﻿<html>
 	<head>
-		<title>新年快乐 - 友哥博客</title>
+		<title>2015新年快乐 - 朋友们!</title>
+		<script src="../javascripts/comment.js"></script>
+		<script src="../javascripts/bd_share.js"></script>
 	</head>
-	<link rel="shortcut icon" href="../images/youge.gif" type="image/x-icon">
+	<link rel="shortcut icon" href="../images/logo1.ico" type="image/x-icon">
 	<style>
-	body{background-color:red;}
-	#happy_new_year h1{font-size:1000%;text-align:center;}
+	body
+	{
+		background-image: url("../images/2015.jpg");
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		background-position:center;
+		background-size:cover;
+	}
+	#happy_new_year h1{color:red;font-size:1000%;text-align:center;}
+	h2{color:red;font-size:500%;text-align:center;}
 	#center{background-position:center;}
+	#yuandan
+	{
+	padding: 0px;
+	margin: 0px auto;
+	background-position:center;
+	width:675;
+	height:242;
+	background-image: url("../images/yuandan.jpg");
+	opacity:0.80;
+	background-repeat: no-repeat;
+	}
+	#yuandan1
+	{
+	padding: 0px;
+	margin: 0px auto;
+	background-position:center;
+	width:480;
+	height:480;
+	background-image: url("../images/psb.png");
+
+	background-repeat: no-repeat;
+	}
+	#main_body
+	{
+	 max-width: 60em;
+	 margin: 0px auto;
+	 color: #AAA;
+	background-color:rgba(46, 52, 54, 0.7);
+	}
+	#mp3center
+	{
+	width:300px;
+	height:30;
+	margin: 0px auto;
+	}
 	</style>
 	<body>
+	<div id="main_body">
 		<div id="happy_new_year">
 			<h1>新年快乐</h1>
-			<marquee scrollamount=5 direction=left>
-				新年快乐！！
-			</marquee>
+			<div id="mp3center">
+			<audio src="Happy-New-Year.mp3" controls="controls" autoplay="autoplay">
+			Your browser does not support the audio element.
+			</audio>
+			</div>
+			<marquee scrollamount=3 direction=right>
+				...................2015新年快乐！<img src="../images/Sheepyear.gif">
+			</marquee>		
 		</div>
+		<div id="yuandan">
+		</div>
+		<h2>祝福墙</h2>
+		<div class="center">
+		<div id="SOHUCS"></div>
+ 
+		</div>	
+	</div>
 	</body>
 </html>
