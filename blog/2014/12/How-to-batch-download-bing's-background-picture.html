@@ -1,0 +1,176 @@
+
+	<!DOCTYPE html>
+	<html xmlns:wb="http://open.weibo.com/wb">
+	<!-----------------------------------------------------
+	----友歌博客模板
+	----作者：Youge
+	----博客地址：http://luxiaoyou.github.com/
+	----欢迎访问！
+	------------------------------------------------------->
+	<head>
+		<title>如何批量下载bing前20多天的背景图片? 友歌博客 - 博客首页</title>  
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="../../../javascripts/comment.js"></script>
+		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/blogstyle_templet.css">
+		<link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+		<style>
+		.Yougeblogs_code
+		{
+		background-color: rgba(255, 255, 255, 0.5);
+		color:white;
+		}
+		#blogh1
+		{
+		width:500px;
+		border-radius: 20px;
+		border-width: 0.2em;
+		background-color: rgba(255, 255, 255, 0);
+		border-color: rgb(180, 176, 99);
+		border-style: solid;
+		text-shadow: 0px 1px #FFF;
+		}
+		#home_header
+		{
+		margin: 10px 0px 0px;
+		height: 43px;
+		}
+		#header_title
+		{
+		max-width: 60em;
+		padding: 0px;
+		margin: 0px auto;
+		background:#F57900;
+		height: 43px;
+		}
+		#home_main
+		{
+		max-width: 60em;
+		min-height: 60em;
+		margin: 0px auto;
+		color: #AAA;
+		background-color: #2E3436;
+		padding: 0px;
+		position: relative;
+		}
+		#home_bottom
+		{
+		max-width: 60em;
+		margin: 0px auto;
+		padding: 0px;
+		clear: both;
+		background: none repeat scroll 0% 0% #151515;
+		color: #AAA;
+		white-space: nowrap;
+		}
+		#home_linkbar
+		{
+		max-width: 60em;
+		margin: 0px auto 20px;
+		padding: 0px;
+		clear: both;
+		background: none repeat scroll 0% 0% #111;
+		color: #AAA;
+		font-weight: bold;
+		text-align: center;
+		min-height: 8em;
+		}
+		.center
+		{
+		width:960px;
+		margin:0 auto;
+		background:#fff;
+		opacity: 0.5;
+		}
+		</style>
+	</head>
+	<body>
+	<div id="youge_home">
+		<div id="home_header">
+			<div id="header_title">
+			</div>
+		</div>
+		<div id="home_main">
+		<br>
+		友歌博客  >><a href="../../../webpages/blog.html">首页</a>  >>  Blog<hr>
+		<h2><span style="color: #000000;"><strong>如何批量下载bing前20多天的背景图片?</strong></span></h2>
+		作者：<a href="../../../webpages/about.html">Youge</a>  发布于：2014-12-13 13:10 <a href="http://www.cnblogs.com/youge/p/youge.html" target="_blank">原文链接</a>
+		<br><br>
+		<div class="bdsharebuttonbox"><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
+		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+		<h1 id="blogh1">工具准备</h1>
+	<p>&nbsp;</p>
+	<p>wget（<strong><a href="http://pan.baidu.com/s/1mg3e18s" target="_blank">点击下载</a></strong>）</p>
+	<p>批处理命令（<strong><a href="http://pan.baidu.com/s/1bncszXd" target="_blank">点击下载</a></strong>）</p>
+	<p>网友提供的接口：<span style="color: #008080;"><span style="color: #000000;"><span style="color: #008080;"><span style="color: #000000;"><span style="color: #008080;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;">http://area.sinaapp.com/bingImg?daysAgo=<span style="color: #000000;">1<span style="color: #000000;">（1代表天数）</span></span></span></span></span></span></span></span></span></span></span></p>
+	<p>&nbsp;</p>
+	<h1 id="blogh1">实现步骤</h1>
+	<p>&nbsp;</p>
+	<p>1、打开记事本，并将下面代码复制粘贴进去,<strong>新建</strong>-<strong>另存为</strong>，文件类型选择"<strong>所有文件</strong>"，文件名为：<strong>下载Bing背景图片.bat（<a href="http://pan.baidu.com/s/1bncszXd" target="_blank">点击下载</a>），</strong>保存在桌面。</p>
+	<div class="Yougeblogs_code">
+	@echo off<br>
+	set var=%cd%<br>
+	md BingImg&cd BingImg<br>
+	for /l %%i in (0,1,30) do %var%\wget http://area.sinaapp.com/bingImg?daysAgo=%%i
+	</div>
+	<p>&nbsp;</p>
+	<p>2、将下载好的文件解压到和<strong>Bing背景图片.bat</strong>同一级目录下（这里都放在桌面）。</p>
+	<p><img src="http://images.cnitblog.com/blog/629565/201412/112132039314035.png" alt="" width="621" height="315" /></p>
+	<p>&nbsp;</p>
+	<p>3、双击<strong>Bing背景图片.bat</strong>。</p>
+	<p><img src="http://images.cnitblog.com/blog/629565/201412/112135377592594.png" alt="" width="633" height="344" /></p>
+	<p>&nbsp;</p>
+	<p>4、下载完后，窗口会自动退出，此时桌面会多出一个<strong><span style="color: #000000;">BingImg</span></strong>的文件夹。</p>
+	<p><img src="http://images.cnitblog.com/blog/629565/201412/112137328537124.png" alt="" width="629" height="378" /></p>
+	<p>&nbsp;</p>
+	<p>5、下载结果（历史图片23张）。</p>
+	<p><img src="http://images.cnitblog.com/blog/629565/201412/112139351961701.png" alt="" width="624" height="267" /></p>
+	<p>&nbsp;</p>
+	<h1 id="blogh1">代码详解</h1>
+	<p>&nbsp;</p>
+	<div class="Yougeblogs_code">
+	@echo off<br>
+	set var=%cd%<<br>
+	md BingImg&cd BingImg<br>
+	for /l %%i in (0,1,30) do %var%\wget http://area.sinaapp.com/bingImg?daysAgo=%%i<br>
+	</div>
+	<p>&nbsp;</p>
+	<p><span style="color: #000000;"><strong>@echo off</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从本行开始关闭回显。</span></p>
+	<p><span style="color: #000000;"><strong>set var=%cd%</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set var：声明一个变量var。%cd%：表示当前文件所在目录绝对地址，意思是将地址传递给var。</span></p>
+	<p><span style="color: #000000;"><strong>md BingImg&amp;</strong><strong>cd BingImg</strong>&nbsp;&nbsp;&nbsp;创建（md）BingImg文件夹，并且(&amp;)进入(cd)BingImg文件夹</span></p>
+	<p><span style="color: #000000;"><strong>for /l %%i in (0,1,30) do %var%\wget http://area.sinaapp.com/bingImg?daysAgo=%%i</strong></span> </p>
+	<p><span style="color: #000000;"><strong><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></strong></p>
+	<ol>
+	<li><span style="color: #000000;"><strong>for</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;批处理循环指令。</span></li>
+	<li><span style="color: #000000;"><strong>/l</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for的参数，处理数字序列。（注：L为小写，虽然是废话，但还是提醒一下，避免看成&ldquo;1&rdquo;或者&ldquo;|&rdquo;了）。</span></li>
+	<li><span style="color: #000000;"><strong>%%i</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传递参数的变量。</span></li>
+	<li><span style="color: #000000;"><strong>in</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;照写，他的后面是循环参数。</span></li>
+	<li><span style="color: #000000;"><strong>(0,1,30)</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;循环参数，里面的参数依次代表，自增量为1，超过30循环结束。</span></li>
+	<li><span style="color: #000000;"><strong>do</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;照写，反正后面是需要执行的指令。</span></li>
+	<li><span style="color: #000000;"><strong>%var%\</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wget程序所在目录的绝对地址，也就是%cd%传递给var的值。（注：&ldquo;\&rdquo;不能少。啰嗦一下，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;例如：c:\Users\Youge\desktop\wget.exe,"\"就是wget.exe后的&ldquo;\",如果去了的话就会<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;变成c:\Users\Youge\desktopwget.exe，此时这个路径就无效了，抱歉啰嗦了）</span></li>
+	<li><span style="color: #000000;"><strong>wget http://area.sinaapp.com/bingImg?daysAgo=%%i</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wget的下载指令，后面的是url，其中这里&rdquo;%%i&ldquo;为天数。</span></li>
+	</ol>
+	<p>&nbsp;</p>
+	<p><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;">对于for指令不懂的可以在cmd中输入：<strong>for/?</strong>（这里又学到一招了：对于dos里不懂得指令，我们可以在指令后加上"/?",这样就可以查找出指令相关的帮助的信息）<br /></span></span></span></span></span></span></span></p>
+	<p>&nbsp;<img src="http://images.cnitblog.com/blog/629565/201412/112209065876202.png" alt="" width="622" height="343" /></p>
+	<wb:follow-button uid="1813932610" type="gray_4" width="100%" height="64" ></wb:follow-button>
+	<br>
+	<hr>
+	
+	
+		<div class="center">
+		<div id="SOHUCS"></div>
+		</div>
+		
+		</div>
+		<div id="home_bottom">
+		友情博客
+		</div>
+		<div id="home_linkbar">
+			<div style="clear: both; margin: 0; width: 100%; ">Copyright ©2014 luxiaoyou</div>
+			<a href="http://luxiaoyou.github.com"><img src="../../../images/blog-logo.png" width="36" height="36" alt="Youge'blog,welcome!!"/></a>
+		</div>
+	</div>
+
+	</body>
+	</html>
