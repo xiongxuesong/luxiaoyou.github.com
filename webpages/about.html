@@ -36,16 +36,6 @@
 		padding: 0px;
 		position: relative;
 		}
-		#home_bottom
-		{
-		max-width: 60em;
-		margin: 0px auto;
-		padding: 0px;
-		clear: both;
-		background: none repeat scroll 0% 0% #151515;
-		color: #AAA;
-		white-space: nowrap;
-		}
 		#home_linkbar
 		{
 		max-width: 60em;
@@ -78,6 +68,67 @@
 		border-radius:15px;
 		-moz-border-radius:15px; /* 老的 Firefox */
 	}
+		#text_center_h1
+		{
+		text-align:center;
+		}
+		#text_center_h1 a:hover,a:active
+		{
+		background-color:#FF2400;
+		}
+		#text_center_h1 a:link,a:visited
+		{
+		color:#D3D3D3;
+		}
+		#text_center_h2
+		{
+		text-align:center;
+		}
+		#text_center_h2 a
+		{
+		text-decoration:none;
+		}
+		#header_title a
+		{
+		text-decoration:none;
+		font-size: 24px;
+		}
+		#header_title ul
+		{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		}
+		#header_title li
+		{
+		display:inline;
+		}
+		#header_title ul
+		{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		overflow:hidden;
+		}
+		#header_title li
+		{
+		float:left;
+		}
+		#header_title a:link,a:visited
+		{
+		display:block;
+		width:100px;
+		font-weight:bold;
+		color:#FFFFFF;
+		background-color:#F57900;
+		text-align:center;
+		padding:7px;
+		text-decoration:none;
+		}
+		#header_title a:hover,a:active
+		{
+		background-color:#FF2400;
+		}
 		</style>
 		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -85,18 +136,24 @@
 	<div id="youge_home">
 		<div id="home_header">
 			<div id="header_title">
-			<br>
-			<a href="http://luxiaoyou.github.com">友歌博客</a>  >><a href="blog.html">首页</a>  >>  About me
+				<nav id="nav_center">
+					<ul>
+						<li><a href="blog.html">Home</a></li>
+						<li><a href="../webpages/about.html">About</a></li>
+						<li><a href="#">Archive</a></li>
+						<li><a href="#">Tags</a></li>
+						<li><a href="#">Projects</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 		<div id="home_main">
 		<div id="wb_follow_btn" ></div>
-		<br><br><br>
+		<br>
 		About me<hr>
 		<br>
-		My name is Lu Xiaoyou(卢小友). You can call me Youge. I was born in 1991s.
-		<br><br><br>
-		
+		My name is <a href="mailto:luxiaoyou@126.com?subject=Contact%20Youge">luxiaoyou</a>(卢小友)and I’m a software developer.You can call me Youge. 
+		<br><br>
 		Photo<hr>
 			<img src="../images/about-me.jpg" width="320" height="431" alt="This is me!!"/>
 		<br><br><br>
@@ -110,9 +167,6 @@
 		
 		</div>
 		<div id="wb_follow_btn" ></div>
-		<div id="home_bottom">
-		友情博客
-		</div>
 		<div id="home_linkbar">
 			<div style="clear: both; margin: 0; width: 100%; ">Copyright ©2015 Youge</div>
 			<a href="../../../webpages/about.html"><img src="../images/blog-logo.png" width="36" height="36" alt="Youge'blog,welcome!!"/></a>
