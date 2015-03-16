@@ -12,6 +12,24 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="../stylesheets/blogstyle_templet.css">
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+		<script type="text/javascript">
+			cc=0
+			function changeimage()
+			{
+			if (cc==0) 
+			{
+			cc=1
+			document.getElementById("myimage").height="431"
+			document.getElementById("myimage").width="320"
+			}
+			else
+			{
+			cc=0
+			document.getElementById("myimage").height="215"
+			document.getElementById("myimage").width="160"
+			}
+			}
+		</script>
 		<style>
 		#home_header
 		{
@@ -127,7 +145,7 @@
 		}
 		#header_title a:hover,a:active
 		{
-		background-color:#FF2400;
+		background-color:rgba(0, 0, 0, 0);
 		}
 		</style>
 		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
@@ -153,9 +171,10 @@
 		About me<hr>
 		<br>
 		My name is <a href="mailto:luxiaoyou@126.com?subject=Contact%20Youge">luxiaoyou</a>(卢小友)and I’m a software developer.You can call me Youge. 
+		<a href="hello" onclick="location='http://www.baidu.com'">a</a>
 		<br><br>
 		Photo<hr>
-			<img src="../images/about-me.jpg" width="320" height="431" alt="This is me!!"/>
+			<a id="" href="#点击放大缩小" onclick="changeimage()" alt="点击放大缩小"><img id="myimage" src="../images/about-me.jpg" width="160" height="215" /></a>
 		<br><br><br>
 		关注我<hr>
 		<br>
@@ -164,7 +183,6 @@
 		<a href="https://github.com/luxiaoyou" target="_blank">
 			<img src="https://github.com/fluidicon.png" width="25" height="25" alt="This is Github!!"/>
 		</a>
-		
 		</div>
 		<div id="wb_follow_btn" ></div>
 		<div id="home_linkbar">
