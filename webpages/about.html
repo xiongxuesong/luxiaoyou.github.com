@@ -1,43 +1,42 @@
 ﻿
 	<!DOCTYPE html>
-	<html xmlns:wb="http://open.weibo.com/wb">
-	<!-----------------------------------------------------
-	----友歌博客模板
-	----作者：友哥
-	----博客地址：http://luxiaoyou.github.com/
-	----欢迎访问！
-	------------------------------------------------------->
+	<html>
 	<head>
 		<title>关于我 - 友歌博客</title>  
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="../stylesheets/blogstyle_templet.css">
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-		<!--<script type="text/javascript">
+		<script type="text/javascript">
 			cc=0
 			function changeimage()
 			{
 			if (cc==0) 
 			{
 			cc=1
-			document.getElementById("myimage").height="431"
-			document.getElementById("myimage").width="320"
+			document.getElementById("myimage").height="862"
+			document.getElementById("myimage").width="640"
 			}
 			else
 			{
 			cc=0
-			document.getElementById("myimage").height="215"
-			document.getElementById("myimage").width="160"
+			document.getElementById("myimage").height="431"
+			document.getElementById("myimage").width="320"
 			}
 			}
-		</script>-->
+		</script>
 		<style>
 		body
 		{
+		color:black;
 		background-image: url("http://bingimage.sinaapp.com");
 		background-repeat: no-repeat;
 		background-attachment:fixed;
 		background-size:cover;
 		background-position:center;
+		}
+		body a
+		{
+		text-decoration:none;
 		}
 		#home_header
 		{
@@ -97,7 +96,7 @@
 		height:40px;
 		border-radius:15px;
 		-moz-border-radius:15px; /* 老的 Firefox */
-	}
+		}
 		#text_center_h1
 		{
 		text-align:center;
@@ -184,19 +183,23 @@
 		<br>
 		About me<hr>
 		<br>
-		My name is <a href="mailto:luxiaoyou@126.com?subject=Contact%20Youge">luxiaoyou</a>(卢小友)and I’m a software developer.You can call me Youge. 
+		嗨！我叫 
+		<a href="https://github.com/luxiaoyou"  target="_blank">卢小友</a>
+		(XiaoYou Lu),是一名程序员，喜爱计算机编程。你们可以叫我Youge（友歌）。
 		<br><br>
 		Photo<hr>
-			<a id="" href="#点击放大缩小" onclick="changeimage()" alt="点击放大缩小"><img id="myimage" src="../images/about-me.jpg" width="320" height="431" /></a>
+			<a id="" href="#点击放大缩小" onclick="changeimage()" alt="点击放大缩小">
+				<img id="myimage" src="../images/about-me.jpg" width="320" height="431" />
+			</a>
 		<br><br><br>
 		关注我<hr>
 		<br>
 		<a href="https://github.com/luxiaoyou" target="_blank">
 			<img src="https://github.com/fluidicon.png" width="25" height="25" alt="This is Github!!"/>
-		</a>
-		<wb:follow-button uid="1813932610" type="red_1" width="67" height="24" ></wb:follow-button>
+		</a><br>
+		<a href="http://weibo.com/yougelu">@新浪微博</a>
 		<br>
-		<a href="mailto:luxiaoyou@126.com?subject=Contact%20Youge">联系我</a>
+		联系我:contact@luxiaoyou.com
 		</div>
 		<div id="wb_follow_btn" ></div>
 		<div id="home_linkbar">
