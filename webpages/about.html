@@ -12,7 +12,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="../stylesheets/blogstyle_templet.css">
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			cc=0
 			function changeimage()
 			{
@@ -29,55 +29,55 @@
 			document.getElementById("myimage").width="160"
 			}
 			}
-		</script>
+		</script>-->
 		<style>
 		body
 		{
 		background-image: url("http://bingimage.sinaapp.com");
-
-		background-repeat: repeat;
+		background-repeat: no-repeat;
 		background-attachment:fixed;
-		/**background-size:cover;**/
+		background-size:cover;
+		background-position:center;
 		}
 		#home_header
 		{
 		margin: 10px 0px 0px;
 		height: 43px;
 		}
-	#header_title
-	{
-	max-width: 60em;
-	padding: 0px;
-	margin: 0px auto;
-	/**background:#F57900;**/
-	background-color:rgba(0, 1, 17, 0.5);
-	height: 43px;
-	}
-	#home_main
-	{
-	max-width: 60em;
-	min-height: 60em;
-	margin: 0px auto;
-	color: #AAA;
-	/**background-color: #2E3436;**/
-	background-color:rgba(255, 255, 255, 0.5);
-	padding: 0px;
-	position: relative;
-	}
-
-	#home_linkbar
-	{
-	max-width: 60em;
-	margin: 0px auto 20px;
-	padding: 0px;
-	clear: both;
-	/**background: none repeat scroll 0% 0% #111;**/
-	background-color:rgba(255, 255, 255, 0.5);
-	color: #AAA;
-	font-weight: bold;
-	text-align: center;
-	min-height: 8em;
-	}
+		#header_title
+		{
+		max-width: 60em;
+		padding: 0px;
+		margin: 0px auto;
+		/**background:#F57900;**/
+		background-color:rgba(0, 1, 17, 0.5);
+		height: 43px;
+		}
+		#home_main
+		{
+		max-width: 60em;
+		min-height: 60em;
+		margin: 0px auto;
+		color: #AAA;
+		/**background-color: #2E3436;**/
+		background-color:rgba(255, 255, 255, 0.5);
+		padding: 0px;
+		position: relative;
+		}
+		
+		#home_linkbar
+		{
+		max-width: 60em;
+		margin: 0px auto 20px;
+		padding: 0px;
+		clear: both;
+		/**background: none repeat scroll 0% 0% #111;**/
+		background-color:rgba(255, 255, 255, 0.5);
+		color: #AAA;
+		font-weight: bold;
+		text-align: center;
+		min-height: 8em;
+		}
 		#mySearch
 		{
 		align:right;
@@ -153,11 +153,13 @@
 		background-color:rgba(0, 1, 17, 0);
 		text-align:center;
 		padding:7px;
+		
 		text-decoration:none;
+
 		}
 		#header_title a:hover,a:active
 		{
-		background-color:rgba(0, 0, 0, 0);
+		background-color:#FF2400;
 		}
 		</style>
 		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
@@ -185,12 +187,11 @@
 		My name is <a href="mailto:luxiaoyou@126.com?subject=Contact%20Youge">luxiaoyou</a>(卢小友)and I’m a software developer.You can call me Youge. 
 		<br><br>
 		Photo<hr>
-			<a id="" href="#点击放大缩小" onclick="changeimage()" alt="点击放大缩小"><img id="myimage" src="../images/about-me.jpg" width="160" height="215" /></a>
+			<a id="" href="#点击放大缩小" onclick="changeimage()" alt="点击放大缩小"><img id="myimage" src="../images/about-me.jpg" width="320" height="431" /></a>
 		<br><br><br>
 		关注我<hr>
 		<br>
 		<wb:follow-button uid="1813932610" type="red_1" width="67" height="24" ></wb:follow-button>
-		<br>
 		<a href="https://github.com/luxiaoyou" target="_blank">
 			<img src="https://github.com/fluidicon.png" width="25" height="25" alt="This is Github!!"/>
 		</a>
