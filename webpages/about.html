@@ -1,11 +1,18 @@
 ﻿
 	<!DOCTYPE html>
+	
+	<!--Sina微博-在HTML标签中增加XML命名空间 -->
 	<html>
 	<head>
 		<title>关于我 - 友歌博客</title>  
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="../stylesheets/blogstyle_templet.css">
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+		
+		<!--Sina微博-在HEAD头中引入WB.JS -->
+		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+		
 		<script type="text/javascript">
 			cc=0
 			function changeimage()
@@ -57,11 +64,15 @@
 		max-width: 60em;
 		min-height: 60em;
 		margin: 0px auto;
-		color: #AAA;
+		color: #000;
 		/**background-color: #2E3436;**/
 		background-color:rgba(255, 255, 255, 0.5);
 		padding: 0px;
 		position: relative;
+		}
+		#home_main a
+		{
+		color:#000;
 		}
 		
 		#home_linkbar
@@ -160,6 +171,7 @@
 		{
 		background-color:#FF2400;
 		}
+		<!--自我介绍-->
 		</style>
 		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -169,24 +181,22 @@
 			<div id="header_title">
 				<nav id="nav_center">
 					<ul>
-						<li><a href="blog.html">Home</a></li>
-						<li><a href="../webpages/about.html">About</a></li>
-						<li><a href="#">Archive</a></li>
-						<li><a href="#">Tags</a></li>
-						<li><a href="#">Projects</a></li>
+						<li><a href="blog.html">首页</a></li>
+						<li><a href="../webpages/about.html">关于</a></li>
+						<li><a href="#">文章</a></li>
+						<li><a href="#">标签</a></li>
+						<li><a href="#">项目</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 		<div id="home_main">
-		<div id="wb_follow_btn" ></div>
 		<br>
 		About me<hr>
 		<br>
-		嗨！我叫 
-		<a href="https://github.com/luxiaoyou"  target="_blank">卢小友</a>
-		(XiaoYou Lu),是一名程序员，喜爱计算机编程。你们可以叫我Youge（友歌）。
+		嗨！我叫<a style="font-weight: bold;font-size:24px;" href="https://github.com/luxiaoyou"  target="_blank" >卢小友</a>(XiaoYou Lu),是一名程序员，喜爱计算机编程。你们可以叫我Youge（友歌）。
 		<br><br>
+
 		Photo<hr>
 			<a id="" href="#点击放大缩小" onclick="changeimage()" alt="点击放大缩小">
 				<img id="myimage" src="../images/about-me.jpg" width="320" height="431" />
@@ -196,16 +206,17 @@
 		<br>
 		<a href="https://github.com/luxiaoyou" target="_blank">
 			<img src="https://github.com/fluidicon.png" width="25" height="25" alt="This is Github!!"/>
-		</a><br>
-		<a href="http://weibo.com/yougelu">@新浪微博</a>
-		<br>
-		联系我:contact@luxiaoyou.com
+		</a>
+		<br><br>
+		@<a style="font-weight: bold;" href="http://weibo.com/yougelu">新浪微博</a>	
+		<br><br>
+		Email:contact@luxiaoyou.com
+		<br><br>
 		</div>
-		<div id="wb_follow_btn" ></div>
 		<div id="home_linkbar">
 			
 			<a href="../webpages/about.html"><img src="../images/blog-logo.png" width="36" height="36" alt="Youge'blog,welcome!!"/></a>
-			<div style="clear: both; margin: 0; width: 100%; ">Copyright ©2015 Youge</div>
+			<div style="clear: both; margin: 0; width: 100%; color:#000;">Copyright ©2015 Youge</div>
 			
 		</div>
 	</div>

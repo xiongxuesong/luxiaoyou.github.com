@@ -1,8 +1,13 @@
+	/**
+		a:link {color:#FF0000;}     未被访问的链接 
+		a:visited {color:#00FF00;}  已被访问的链接 
+		a:hover {color:#FF00FF;}    鼠标指针移动到链接上 
+		a:active {color:#0000FF;}   正在被点击的链接 
+	**/
 
-
-	body
+	
 	{
-	background:none repeat scroll 0% 0% #0E2426;
+	background:none repeat scroll 0% 0%;/**background:none repeat scroll 0% 0% #0E2426;**/
 	}
 	
 	h1
