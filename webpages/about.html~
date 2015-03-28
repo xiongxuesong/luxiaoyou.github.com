@@ -1,18 +1,17 @@
-
+﻿
 	<!DOCTYPE html>
-	
-	<!--Sina微博-在HTML标签中增加XML命名空间 -->
-	<html>
+	<html xmlns:wb="http://open.weibo.com/wb">
+	<!-----------------------------------------------------
+	----友歌博客模板
+	----作者：友哥
+	----博客地址：http://luxiaoyou.github.com/
+	----欢迎访问！
+	------------------------------------------------------->
 	<head>
 		<title>关于我 - 友歌博客</title>  
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="../stylesheets/blogstyle_templet.css">
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-
-		
-		<!--Sina微博-在HEAD头中引入WB.JS -->
-		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
-		
 		<script type="text/javascript">
 			cc=0
 			function changeimage()
@@ -20,31 +19,18 @@
 			if (cc==0) 
 			{
 			cc=1
-			document.getElementById("myimage").height="862"
-			document.getElementById("myimage").width="640"
+			document.getElementById("myimage").height="431"
+			document.getElementById("myimage").width="320"
 			}
 			else
 			{
 			cc=0
-			document.getElementById("myimage").height="431"
-			document.getElementById("myimage").width="320"
+			document.getElementById("myimage").height="215"
+			document.getElementById("myimage").width="160"
 			}
 			}
 		</script>
 		<style>
-		body
-		{
-		color:black;
-		background-image: url("http://bingimage.sinaapp.com");
-		background-repeat: no-repeat;
-		background-attachment:fixed;
-		background-size:cover;
-		background-position:center;
-		}
-		body a
-		{
-		text-decoration:none;
-		}
 		#home_header
 		{
 		margin: 10px 0px 0px;
@@ -55,34 +41,26 @@
 		max-width: 60em;
 		padding: 0px;
 		margin: 0px auto;
-		/**background:#F57900;**/
-		background-color:rgba(0, 1, 17, 0.5);
-		height: 43px;
+		background:#F57900;
+		height: 50px;
 		}
 		#home_main
 		{
 		max-width: 60em;
 		min-height: 60em;
 		margin: 0px auto;
-		color: #000;
-		/**background-color: #2E3436;**/
-		background-color:rgba(255, 255, 255, 0.5);
+		color: #AAA;
+		background-color: #2E3436;
 		padding: 0px;
 		position: relative;
 		}
-		#home_main a
-		{
-		color:#000;
-		}
-		
 		#home_linkbar
 		{
 		max-width: 60em;
 		margin: 0px auto 20px;
 		padding: 0px;
 		clear: both;
-		/**background: none repeat scroll 0% 0% #111;**/
-		background-color:rgba(255, 255, 255, 0.5);
+		background: none repeat scroll 0% 0% #111;
 		color: #AAA;
 		font-weight: bold;
 		text-align: center;
@@ -107,7 +85,7 @@
 		height:40px;
 		border-radius:15px;
 		-moz-border-radius:15px; /* 老的 Firefox */
-		}
+	}
 		#text_center_h1
 		{
 		text-align:center;
@@ -160,18 +138,15 @@
 		width:100px;
 		font-weight:bold;
 		color:#FFFFFF;
-		background-color:rgba(0, 1, 17, 0);
+		background-color:#F57900;
 		text-align:center;
 		padding:7px;
-		
 		text-decoration:none;
-
 		}
 		#header_title a:hover,a:active
 		{
-		background-color:#FF2400;
+		background-color:rgba(0, 0, 0, 0);
 		}
-		<!--自我介绍-->
 		</style>
 		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -181,42 +156,40 @@
 			<div id="header_title">
 				<nav id="nav_center">
 					<ul>
-						<li><a href="blog.html">首页</a></li>
-						<li><a href="../webpages/about.html">关于</a></li>
-						<li><a href="#">文章</a></li>
-						<li><a href="#">标签</a></li>
-						<li><a href="#">项目</a></li>
+						<li><a href="blog.html">Home</a></li>
+						<li><a href="../webpages/about.html">About</a></li>
+						<li><a href="#">Archive</a></li>
+						<li><a href="#">Tags</a></li>
+						<li><a href="#">Projects</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 		<div id="home_main">
+		<div id="wb_follow_btn" ></div>
 		<br>
 		About me<hr>
 		<br>
-		嗨！我叫<a style="font-weight: bold;font-size:24px;" href="https://github.com/luxiaoyou"  target="_blank" >卢小友</a>(XiaoYou Lu),是一名程序员，喜爱计算机编程。你们可以叫我Youge（友歌）。
+		My name is <a href="mailto:luxiaoyou@126.com?subject=Contact%20Youge">luxiaoyou</a>(卢小友)and I’m a software developer.You can call me Youge. 
 		<br><br>
-
 		Photo<hr>
-			<a id="" href="#点击放大缩小" onclick="changeimage()" alt="点击放大缩小">
-				<img id="myimage" src="../images/about-me.jpg" width="320" height="431" />
-			</a>
+			<a id="" href="#点击放大缩小" onclick="changeimage()" alt="点击放大缩小"><img id="myimage" src="../images/about-me.jpg" width="160" height="215" /></a>
 		<br><br><br>
 		关注我<hr>
+		<br>
+		<wb:follow-button uid="1813932610" type="red_1" width="67" height="24" ></wb:follow-button>
 		<br>
 		<a href="https://github.com/luxiaoyou" target="_blank">
 			<img src="https://github.com/fluidicon.png" width="25" height="25" alt="This is Github!!"/>
 		</a>
-		<br><br>
-		@<a style="font-weight: bold;" href="http://weibo.com/yougelu">新浪微博</a>	
-		<br><br>
-		Email:contact@luxiaoyou.com
-		<br><br>
+		<br>
+		<a href="mailto:luxiaoyou@126.com?subject=Contact%20Youge">联系我</a>
 		</div>
+		<div id="wb_follow_btn" ></div>
 		<div id="home_linkbar">
 			
 			<a href="../webpages/about.html"><img src="../images/blog-logo.png" width="36" height="36" alt="Youge'blog,welcome!!"/></a>
-			<div style="clear: both; margin: 0; width: 100%; color:#000;">Copyright ©2015 Youge</div>
+			<div style="clear: both; margin: 0; width: 100%; ">Copyright ©2015 Youge</div>
 			
 		</div>
 	</div>
