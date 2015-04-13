@@ -1,6 +1,10 @@
-﻿		.welcome ul
+﻿		#home_header
 		{
-
+		margin: 10px 0px 0px;
+		height: 43px;
+		}
+		.welcome ul
+		{
 		list-style-type:none;
 		margin:0;
 		padding:0;
@@ -11,22 +15,24 @@
 		text-decoration:none;
 		display:block;
 		font-weight:bold;
-		color:#FFFFFF;
+
 		background-color:rgba(0, 0, 0, 0);
 		width:343px;
 		text-align:center;
-		text-transform:capitalize;
-		/**
-		none : 　无转换发生
-		capitalize : 　将每个单词的第一个首字母转换成大写，其余无转换发生
-		uppercase : 　转换成大写
-		lowercase : 　转换成小写
-		**/
+		text-transform:none;
+		color:#000;
 		}
 		
-		.welcome a:hover,a:active
+		.welcome a:hover
 		{
 		color:#FF2400;
+		font-size:20px;
+
+		}
+		.welcome a:active
+		{
+		color:#000;
+		font-size:20px;
 
 		}
 		.welcome
@@ -34,11 +40,16 @@
 		margin:auto;
 		margin-top:15%;
 		text-align:center;
-		border:2px solid #a1a1a1;
-		padding:10px 40px; 
-		background-color:rgba(0, 0, 0, 0.5);
-		width:350px;
-		border-radius:25px;
+		border:0px solid #fff;
+		padding:0px 0px; 
+		background-color:rgba(0, 0, 0, 0.2);
+		width:auto;
+		height:200px;
+		border-radius:5px;
+		
+		-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+		box-shadow: 10px 10px 5px #888888;
+		
 		}
 		body
 		{
@@ -46,42 +57,4 @@
 		/* background-repeat: no-repeat; */
 		/* background-attachment:fixed; */
 		/* background-size:cover; */
-		}
-		body a
-		{
-		color:black;
-		}
-
-		#mqee
-		{
-		
-		margin:auto;
-		margin-top:5px;
-		text-align:center;
-		border-radius:5px;
-		padding:10px 40px; 
-		background-color:rgba(0, 0, 0, 0.5);
-		width:320px;
-
-		}
-		#mqee a:hover,a:active
-		{
-		background-color:#FF2400;
-		}
-		#mqee a:link,a:visited
-		{
-		color:#FFFFFF;
-		text-align:center;
-
-		text-transform:capitalize;
-		/**
-		none : 　无转换发生
-		capitalize : 　将每个单词的第一个首字母转换成大写，其余无转换发生
-		uppercase : 　转换成大写
-		lowercase : 　转换成小写
-		**/
-		}
-		#mqee a
-		{
-		text-decoration:none;
 		}
