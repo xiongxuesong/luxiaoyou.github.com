@@ -1,0 +1,125 @@
+﻿		body
+		{
+		background-image: url("../images/youge_bg.gif");
+		/* background-repeat: no-repeat; */
+		/* background-attachment:fixed; */
+		/* background-size:cover; */
+		}
+		body a
+		{
+		text-decoration:none;
+		}
+		#home_header
+		{
+		margin: 10px 0px 0px;
+		height: 43px;
+		}
+		#header_title
+		{
+		max-width: 60em;
+		padding: 0px;
+		margin: 30px auto;
+		/**background:#F57900;**/
+		background-color:rgba(0, 0, 0, 0.2);
+		height: 43px;
+			
+		-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+		box-shadow: 10px 10px 5px #888888;
+		border-radius:8px;
+		}
+		#home_main
+		{
+		max-width: 60em;
+		min-height: 60em;
+		margin: 15px auto;
+		color: #AAA;
+		/**background-color: #2E3436;**/
+		background-color:rgba(255, 255, 255, 0.2);
+		padding: 0px;
+		position: relative;
+		color:black;
+		}
+		#home_main a
+		{
+		color:#000;
+		}
+		
+		#home_linkbar
+		{
+		max-width: 60em;
+		margin: 0px auto 20px;
+		padding: 0px;
+		clear: both;
+		/**background: none repeat scroll 0% 0% #111;**/
+		background-color:rgba(255, 255, 255, 0.5);
+		color: #AAA;
+		font-weight: bold;
+		text-align: center;
+		min-height: 8em;
+		}
+		#home_linkbar a
+		{
+		text-decoration:none;
+		color:blue;
+		}
+		#text_center_h1
+		{
+		text-align:center;
+		}
+		#text_center_h1 a:hover,a:active
+		{
+		background-color:#FF2400;
+		}
+		#text_center_h1 a:link,a:visited
+		{
+		color:#D3D3D3;
+		}
+		#text_center_h2
+		{
+		text-align:center;
+		}
+		#text_center_h2 a
+		{
+		text-decoration:none;
+		}
+		#header_title a
+		{
+		text-decoration:none;
+		font-size: 24px;
+		}
+		#header_title ul
+		{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		}
+		#header_title li
+		{
+		display:inline;
+		}
+		#header_title ul
+		{
+		list-style-type:none;
+		margin:0px 0px 0px 30px ;/*u r d l*/
+		padding:0;
+		overflow:hidden;
+		}
+		#header_title li
+		{
+		float:left;
+		}
+		#header_title a:link,a:visited
+		{
+		display:block;
+		width:100px;
+		font-weight:bold;
+		color:#FFFFFF;
+		background-color:rgba(0, 0, 0, 0);
+		text-align:center;
+		padding:7px;
+		text-decoration:none;
+		}
+		#header_title a:hover,a:active
+		{
+		background-color:#FF2400;
+		}
