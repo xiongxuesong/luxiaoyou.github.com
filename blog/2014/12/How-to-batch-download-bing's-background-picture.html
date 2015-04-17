@@ -12,6 +12,32 @@
 		<link id="myhref" rel="stylesheet" title="Default" href="../../../highlight/styles/monokai_sublime.css" />
 		<script>hljs.initHighlightingOnLoad();</script>
 		<script src="../../../javascripts/high-light-style.js"></script>
+		<script>
+			//更换风格
+			cc=0
+			i = 0
+			function changeHref()
+			{
+				if (cc==0) 
+				{
+					cc=1
+					document.getElementById("myhref").href="../../../highlight/styles/" + articles_list[i] + ".css"
+					document.getElementById("butt").value="更换风格:"+articles_list[i]+ "-" + i	
+					i = i + 1
+					if (i ==55)
+					i=0
+				}
+				else
+				{
+					cc=0
+					document.getElementById("myhref").href="../../../highlight/styles/" + articles_list[i] + ".css"
+					document.getElementById("butt").value="更换风格:"+articles_list[i] + "-" + i
+					i = i + 1
+					if (i ==55)
+					i=0
+				}
+			}
+		</script>
 		<style>
 		.Yougeblogs_code
 		{
@@ -21,7 +47,7 @@
 		border-left-color:#00ff00;
 		border-radius:5px 0px 0px 5px;
 		color:black;
-		width:700px;
+		width:720px;
 		}
 		#blogh1
 		{
@@ -70,7 +96,7 @@
 	<h1 id="blogh1">实现步骤</h1>
 	<p>&nbsp;</p>
 	<p>1、打开记事本，并将下面代码复制粘贴进去,<strong>新建</strong>-<strong>另存为</strong>，文件类型选择"<strong>所有文件</strong>"，文件名为：<strong>下载Bing背景图片.bat（<a href="http://pan.baidu.com/s/1bncszXd" target="_blank">点击下载</a>），</strong>保存在桌面。</p>
-	<input id="butt" type="button" onclick="changeHref()" value="更换风格:monokai_sublime-36">
+	<input id="butt"type="button" onclick="changeHref()" value="更换风格:monokai_sublime-36">
 <div class="Yougeblogs_code">
 <pre><code class="bat">
 @echo off
@@ -95,7 +121,7 @@ for /l %%i in (0,1,30) do %var%\wget http://area.sinaapp.com/bingImg?daysAgo=%%i
 	<p>&nbsp;</p>
 	<h1 id="blogh1">代码详解</h1>
 	<p>&nbsp;</p>
-	<input id="butt" type="button" onclick="changeHref()" value="更换风格:monokai_sublime-36" >
+	<input id="butt"type="button" onclick="changeHref()" value="更换风格:monokai_sublime-36">
 <div class="Yougeblogs_code">
 <pre><code class="bat">
 @echo off
