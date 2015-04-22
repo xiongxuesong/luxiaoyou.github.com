@@ -2,11 +2,13 @@
 	<!DOCTYPE html>
 	<html>
 	<head>
-		<title>如何批量下载bing的背景图片? 友歌博客 - 博客首页[http://www.luxiaoyou.com]</title>  
+		<title>如何批量下载bing的背景图片?</title>  
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- 		<meta name="description" content="对于for指令不懂的可以在cmd中输入"> -->
 		<link rel="stylesheet" type="text/css" href="../../../stylesheets/mode.css">
 		<link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
 		
+		<script type="text/javascript" charset="utf-8" src="../../../json/JSONZhaiyaotext.json"></script>			
 		<script src="../../../highlight/highlight.pack.js"></script>
 		<link id="myhref" rel="stylesheet" title="Default" href="../../../highlight/styles/monokai_sublime.css" />
 		<script>hljs.initHighlightingOnLoad();</script>
@@ -37,6 +39,8 @@
 				}
 			}
 		</script>
+		
+		
 		<style>
 		.Yougeblogs_code
 		{
@@ -57,7 +61,7 @@
 		border-color: rgb(180, 176, 99);
 		border-style: solid;
 		text-shadow: 0px 1px #FFF;
-		color:black;
+		color:#000000;
 		}
 		</style>
 	</head>
@@ -78,14 +82,28 @@
 		</div>
 		<div id="home_main">
 		<br>
-		<h2><span style="color: #000000;"><strong>如何批量下载bing前20多天的背景图片?</strong></span></h2>
+		<h2><span style="color: #000000;"><strong>如何批量下载bing的背景图片?</strong></span></h2>
 		作者:<a href="../../../webpages/about.html">Youge</a>&nbsp;&nbsp;&nbsp;&nbsp;发布于:2014-12-13 13:10&nbsp;&nbsp;
-		<!--评论人数api-->
-		&nbsp;&nbsp;评论:<a href="#SOHUCS" id="changyan_count_unit"></a><script type="text/javascript" src="http://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
-		<!--评论人数api-end-->
-		&nbsp;&nbsp;
-		<a href="http://www.cnblogs.com/youge/p/youge.html" target="_blank">原文链接</a>
-		<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=e8aa84eb-daa4-4a38-b624-d3e4ad7a362e&style=10&bgcolor=Orange&bp=qqmb,bsharesync,sinaminiblog,qzone,189share,sohuminiblog,renren,xinhuamb,tianya,shouji,ifengmb,neteasemb,qqxiaoyou,kaixin001,weixin,douban,qqim"></script>
+		
+		
+		<!--分享按钮-->
+		<p><div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-sharethis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div>
+		<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=8272c8e2-d841-46a1-bddc-791b6d50d1b3&amp;pophcol=2&amp;lang=zh"></script>
+		<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../json/JSONZhaiyaopic.json"></script>			
+		<script type="text/javascript" charset="utf-8">
+		bShare.addEntry({
+ 		pic: JSONpic.bingpic
+		});
+		</script> 
+		</p>
+		<!--分享按钮-->
+		
+		
+	<p id="pzaiyao" class="BSHARE_TEXT"></p>
+		<script type="text/javascript">
+		document.getElementById("pzaiyao").innerHTML=JSONText.bingtext
+		</script>
 		<h1 id="blogh1">工具准备</h1>
 	<p>&nbsp;</p>
 	<p>wget（<strong><a href="http://pan.baidu.com/s/1mg3e18s" target="_blank">点击下载</a></strong>）</p>
@@ -150,6 +168,7 @@ for /l %%i in (0,1,30) do %var%\wget http://area.sinaapp.com/bingImg?daysAgo=%%i
 	<p>&nbsp;</p>
 	<p><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;"><span style="color: #000000;">对于for指令不懂的可以在cmd中输入：<strong>for/?</strong>（这里又学到一招了：对于dos里不懂得指令，我们可以在指令后加上"/?",这样就可以查找出指令相关的帮助的信息）<br /></span></span></span></span></span></span></span></p>
 	<p>&nbsp;<img src="http://images.cnitblog.com/blog/629565/201412/112209065876202.png" alt="" width="622" height="343" /></p>
+
 	<br>
 	<hr>
 	
@@ -157,7 +176,7 @@ for /l %%i in (0,1,30) do %var%\wget http://area.sinaapp.com/bingImg?daysAgo=%%i
 		<div class="center">
 
 			<!-- 评论框 start -->
-			<div class="ds-thread" data-thread-key="blog2014" data-title="如何批量下载bing的背景图片? " data-url="http://www.luxiaoyou.com/blog/2014/12/How-to-batch-download-bing%27s-background-picture.html"></div>
+			<div class="ds-thread" data-thread-key="blog20141213" data-title="如何批量下载bing的背景图片? " data-url="http://www.luxiaoyou.com/blog/2014/12/How-to-batch-download-bing's-background-picture.html"></div>
 			<!-- 评论框 end -->
 			<!-- 公共JS代码 start (一个网页只需插入一次) -->
 			<script type="text/javascript">
@@ -176,8 +195,8 @@ for /l %%i in (0,1,30) do %var%\wget http://area.sinaapp.com/bingImg?daysAgo=%%i
 		
 		</div>
 		<div id="home_linkbar">
-			
-			<a href="../../../webpages/about.html"><img src="../../../images/blog-logo.png" width="36" height="36" alt="Youge'blog,welcome!!"/></a>
+			<br>
+			<a href="../../../webpages/about.html"><img src="../../../images/blog-logo.png" width="36" height="36" alt="Youge'blog,welcome!!" title="友歌博客"/></a>
 			<div style="clear: both; margin: 0; width: 100%; ">Copyright ©2015 <a href="http://www.luxiaoyou.com">luxiaoyou.com</a></div>
 			
 		</div>

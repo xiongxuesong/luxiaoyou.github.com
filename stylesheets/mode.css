@@ -1,1 +1,193 @@
-﻿body{background-image:url("../images/youge_bg.gif")}#home_header{margin:10px 0 0;height:43px}#header_title{max-width:60em;padding:0;margin:30px auto;background-color:rgba(0,0,0,0.2);height:43px;-moz-box-shadow:1px 2px 5px #888;box-shadow:1px 2px 5px #888;border-radius:8px}#header_title li{display:inline;float:left}#header_title ul{list-style-type:none;margin:0 0 0 30px;padding:0;overflow:hidden;list-style-type:none}#header_title a:link,a:visited{font-size:24px;display:block;width:100px;font-weight:bold;color:#fff;background-color:rgba(0,0,0,0);text-align:center;padding:7px;text-decoration:none}#header_title a:hover,a:active{background-color:rgba(0,0,0,0.1);color:#000}#home_main{max-width:60em;min-height:60em;margin:15px auto;background-color:rgba(255,255,255,0.2);padding:0;position:relative;color:#000}#home_main a{color:#000}#home_main a:link,a:visited{text-decoration:none;color:#000}#home_main a:hover,a:active{color:#000;text-decoration:underline}#home_linkbar{max-width:60em;margin:0 auto 20px;padding:0;clear:both;background-color:rgba(255,255,255,0.5);color:#AAA;font-weight:bold;text-align:center;min-height:8em}#home_linkbar a{text-decoration:none;color:blue}h1{margin-bottom:15px;height:50px;line-height:50px;text-align:center;font-size:48px;color:#FFF}.center{width:1000px;margin:0 auto;background:#fff;opacity:.8}.copr{display:none}#footer{text-align:center;min-height:15px;_height:15px;border-top:1px solid black;margin-top:10px;padding-top:10px;margin-bottom:10px}.newsmode{border-style:solid;border-width:0 0 1px 0;border-bottom-color:#0f0;background-color:rgba(0,0,0,0.04);height:60px;width:600px;margin:10px auto auto auto}.container_for_newsmode{width:640px;float:left;background-color:rgba(0,0,0,0.04);-moz-box-shadow:10px 10px 5px #888;box-shadow:1px 1px 8px #888;border-radius:8px}.container_for_content{width:290px;background-color:rgba(0,0,0,0.04);float:left;margin:auto auto auto 25px;height:1000px;-moz-box-shadow:1px 1px 10px #888;box-shadow:1px 1px 8px #888;border-radius:8px}.newsmode a:link,a:visited{text-decoration:none;color:#FFF}.newsmode a:hover,a:active{color:#ff2400;text-decoration:underline}.newsmode a{color:#000}
+﻿		body
+		{
+		background-image: url("../images/youge_bg.gif");
+		/* background-repeat: no-repeat; */
+		/* background-attachment:fixed; */
+		/* background-size:cover; */
+		}
+
+		#home_header
+		{
+		margin: 10px 0px 0px;
+		height: 43px;
+		}
+		#header_title
+		{
+		max-width: 60em;
+		padding: 0px;
+		margin: 30px auto;
+		/**background:#F57900;**/
+    	background-color:rgba(0, 0, 0, 0.04);
+		height: 43px;
+
+		box-shadow: 1px 2px 5px #888;
+		border-radius:8px;
+		}
+		#header_title li
+		{
+		display:inline;
+		float:left;
+		}
+		#header_title ul
+		{
+		list-style-type:none;
+		margin:0px 0px 0px 30px ;/*u r d l*/
+		padding:0;
+		overflow:hidden;
+		list-style-type:none;
+		}
+
+		#header_title a:link,a:visited
+		{
+		font-size: 24px;
+		display:block;
+		width:100px;
+		font-weight:bold;
+		color: #888;
+		background-color:rgba(0, 0, 0, 0);
+		text-align:center;
+		padding:7px;
+		text-decoration:none;
+		}
+		#header_title a:hover,a:active
+		{
+		background-color: rgba(0, 0, 0, 0.2);
+		color:#000;
+		}
+		#home_main
+		{
+		max-width: 60em;
+		min-height: 60em;
+		margin: 15px auto;
+		/**background-color: #2E3436;**/
+		background-color:rgba(255, 255, 255, 0);
+		padding: 0px;
+		position: relative;
+		color:#000;
+		}
+
+
+		#home_main a:link,a:visited
+		{
+			text-decoration:none;
+			color: #000;
+		}
+		#home_main a:hover,a:active
+		{
+			text-decoration: underline;
+			color:#00aa00;
+		}
+
+		#home_linkbar
+		{
+		max-width: 60em;
+		margin: 20px auto 20px auto;
+		padding: 0px;
+		clear: both;
+		/**background: none repeat scroll 0% 0% #111;**/
+		background-color:rgba(0, 0, 0, 0.04);
+
+		font-weight: bold;
+		text-align: center;
+		min-height: 8em;
+
+		box-shadow: 1px 2px 8px #888;
+		border-radius:8px;
+		}
+		#home_linkbar a
+		{
+		text-decoration:none;
+		}
+
+
+
+
+		/**
+		a:link {color:#FF0000;}     未被访问的链接
+		a:visited {color:#00FF00;}  已被访问的链接
+		a:hover {color:#FF00FF;}    鼠标指针移动到链接上
+		a:active {color:#0000FF;}   正在被点击的链接
+		**/
+
+
+
+	     h1
+	     { 
+	     margin-bottom:15px;
+	     height:50px;
+	     line-height:50px;
+	     text-align:center;
+	     font-size:48px;
+	     color:#000;
+	     }
+         
+	     .center
+	     { 
+	     width:60em;
+	     margin:auto;
+	     background-color:rgba(255, 255, 255, 0.04);
+	     border-radius:10px;
+	     }
+	     
+	     .copr
+	     { 
+	     display:none;
+	     }
+         
+
+		.newsmode
+		{
+		border-style: solid;
+		border-width: 0px 0px 1px 0px;
+		border-bottom-color: #00ff00;
+		background-color: rgba(0, 0, 0, 0.04);
+		height: 60px;
+		width: 600px;
+		margin: 10px auto 10px auto;
+		}
+		.container_for_newsmode
+		{
+		width: 640px;
+		float: left;
+		height:640px;
+		background-color: rgba(0, 0, 0, 0.04);
+
+		box-shadow: 1px 1px 8px #888;
+		border-radius:8px;
+		}
+		.container_for_content
+		{
+
+		width: 290px;
+		background-color: rgba(0, 0, 0, 0.04);
+		float: left;
+		margin: auto auto 20px 25px;
+		height: 1000px;
+
+		box-shadow: 1px 1px 8px #888;
+		border-radius:8px;
+		}
+
+		.newsmode a:link,a:visited
+		{
+		text-decoration:none;
+		color: #888;
+		}
+		.newsmode a:hover,a:active
+		{
+		text-decoration: underline;
+		}
+		.newsmode a
+		{
+			color:#000;
+		}
+		
+		/* 用于文章摘要 */
+		.BSHARE_TEXT
+		{
+		width:720px;
+		box-shadow: 0px 0px 8px #888;
+		border-radius:8px;
+		padding:10px 10px 10px 10px;
+		}
+		/* 用于文章摘要 */

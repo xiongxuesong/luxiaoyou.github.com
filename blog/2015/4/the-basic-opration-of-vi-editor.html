@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>vi/vim编辑器的基本操作 友歌博客 - 博客首页[http://www.luxiaoyou.com]</title>  
+		<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta  name="generator" content="Org-mode" />
+		<meta  name="author" content="卢小友" />
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/mode.css">
+		<link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+		
+		<script src="../../../highlight/highlight.pack.js"></script>
+		<link id="myhref" rel="stylesheet" title="Default" href="../../../highlight/styles/monokai_sublime.css" />
+		<script>hljs.initHighlightingOnLoad();</script>
+		<script src="../../../javascripts/high-light-style.js"></script>
+		<script>
+			//更换风格
+			cc=0
+			i = 0
+			function changeHref()
+			{
+				if (cc==0) 
+				{
+					cc=1
+					document.getElementById("myhref").href="../../../highlight/styles/" + articles_list[i] + ".css"
+					document.getElementById("butt").value="更换风格:"+articles_list[i]+ "-" + i	
+					i = i + 1
+					if (i ==55)
+					i=0
+				}
+				else
+				{
+					cc=0
+					document.getElementById("myhref").href="../../../highlight/styles/" + articles_list[i] + ".css"
+					document.getElementById("butt").value="更换风格:"+articles_list[i] + "-" + i
+					i = i + 1
+					if (i ==55)
+					i=0
+				}
+			}
+		</script>
+		<style>
+		.Yougeblogs_code
+		{
+		background-color: rgba(0, 0, 0, 0.04);
+		border-style: solid;
+		border-width: 0px 0px 0px 8px;
+		border-left-color:#00ff00;
+		border-radius:5px 0px 0px 5px;
+		color:black;
+		width:720px;
+		}
+		#blogh1
+		{
+		width:500px;
+		border-radius: 20px;
+		border-width: 0.2em;
+		background-color: rgba(255, 255, 255, 0);
+		border-color: rgb(180, 176, 99);
+		border-style: solid;
+		text-shadow: 0px 1px #FFF;
+		color:#fff;
+		}
+		</style>
+
+<!-- 2015-04-21 周二 20:08 -->
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+	</head>
+	<body>
+	<div id="youge_home">
+		<div id="home_header">
+			<div id="header_title">
+				<nav id="nav_center">
+					<ul>
+						<li><a href="../../../index.html">首页</a></li>
+						<li><a href="../../../webpages/about.html">关于</a></li>
+						<li><a href="../../../webpages/blog.html">文章</a></li>
+						<li><a href="../../../webpages/blog.html">标签</a></li>
+						<li><a href="../../../webpages/blog.html">项目</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div id="home_main">
+		<br>
+<h2><span style="color: #000000;"><strong>vi/vim编辑器的基本操作</span></h2>
+
+		作者:<a href="../../../webpages/about.html">Youge</a>&nbsp;&nbsp;&nbsp;&nbsp;发布于:2014-12-13 13:10&nbsp;&nbsp;
+		
+		
+		<!--分享按钮-->
+		<p><div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-sharethis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div>
+		<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=8272c8e2-d841-46a1-bddc-791b6d50d1b3&amp;pophcol=2&amp;lang=zh"></script>
+		<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+		<script src="../../../lib/lib-zhaiyaopic.js"></script>		
+		<script type="text/javascript" charset="utf-8">
+		bShare.addEntry({
+		pic: bingpic
+		});
+		</script> 
+		</p>
+		<!--分享按钮-->
+
+<div id="table-of-contents">
+<h2>目录</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 工具准备</a></li>
+<li><a href="#sec-2">2. vi/vim基本入门</a>
+<ul>
+<li><a href="#sec-2-1">2.1. 安装</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. vi/vim基本命令表</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 工具准备</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<b>一句废话</b> ：因为我们的目的是学习vi/vim操作，所以不必强调使用linux系统下的vi/vim,这里使用的是windows版的gvim（gvim是vi/vim的gui加强版）。<br  />
+<b>网盘下载</b> ：<a href="http://pan.baidu.com/s/1hqfAch2">http://pan.baidu.com/s/1hqfAch2</a><br  />
+<b>官网下载</b> :<a href="http://www.vim.org/download.php#pc">http://www.vim.org/download.php#pc</a><br  />
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> vi/vim基本入门</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 安装</h3>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> vi/vim基本命令表</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+下面为vi编辑器常用的命令，仅供参考。<br  />
+相关资料：[<a href="http://www.vim.org/docs.php">http://www.vim.org/docs.php</a>]<br  />
+vi/vim帮助文档：[<a href="http://vimdoc.sourceforge.net/htmldoc/help.html">http://vimdoc.sourceforge.net/htmldoc/help.html</a>]<br  />
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">命令</th>
+<th scope="col" class="left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">vi</td>
+<td class="left">从控制台进入vi编辑器</td>
+</tr>
+
+<tr>
+<td class="left">vi filename</td>
+<td class="left">创建名为filename的文件并进入vi编辑器</td>
+</tr>
+
+<tr>
+<td class="left">命令行模式</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">i</td>
+<td class="left">从光标所在字符前插入</td>
+</tr>
+
+<tr>
+<td class="left">a</td>
+<td class="left">从光标所在的字符后插入</td>
+</tr>
+
+<tr>
+<td class="left">o</td>
+<td class="left">从光标所在行的下面插入空白行</td>
+</tr>
+
+<tr>
+<td class="left">I</td>
+<td class="left">从光标所在行的行首插入</td>
+</tr>
+
+<tr>
+<td class="left">A</td>
+<td class="left">从光标所在行的行末插入</td>
+</tr>
+
+<tr>
+<td class="left">O</td>
+<td class="left">从光标所在行的上面插入空白行</td>
+</tr>
+
+<tr>
+<td class="left">s</td>
+<td class="left">删除光标所在字符进入插入模式</td>
+</tr>
+
+<tr>
+<td class="left">S</td>
+<td class="left">删除光标所在行进入插入模式</td>
+</tr>
+
+<tr>
+<td class="left">Esc</td>
+<td class="left">插入模式切换到命令行模式</td>
+</tr>
+
+<tr>
+<td class="left">k</td>
+<td class="left">类似方向键上</td>
+</tr>
+
+<tr>
+<td class="left">j</td>
+<td class="left">类似方向键下</td>
+</tr>
+
+<tr>
+<td class="left">h</td>
+<td class="left">类似方向键左</td>
+</tr>
+
+<tr>
+<td class="left">l</td>
+<td class="left">类是方向键右</td>
+</tr>
+
+<tr>
+<td class="left">Ctrl+u</td>
+<td class="left">向上移动半页</td>
+</tr>
+
+<tr>
+<td class="left">Ctrl+d</td>
+<td class="left">向下移动半页</td>
+</tr>
+
+<tr>
+<td class="left">Ctrl+b</td>
+<td class="left">向上移动一页</td>
+</tr>
+
+<tr>
+<td class="left">Ctrl+f</td>
+<td class="left">向下移动一页</td>
+</tr>
+
+<tr>
+<td class="left">0</td>
+<td class="left">光标移动到所在行的行首</td>
+</tr>
+
+<tr>
+<td class="left">gg</td>
+<td class="left">移动到文本的第一行</td>
+</tr>
+
+<tr>
+<td class="left">G</td>
+<td class="left">移动到文本最后一行</td>
+</tr>
+
+<tr>
+<td class="left">$</td>
+<td class="left">光标移动到所在行的行为</td>
+</tr>
+
+<tr>
+<td class="left">^</td>
+<td class="left">光标移动到所在行的行首</td>
+</tr>
+
+<tr>
+<td class="left">w</td>
+<td class="left">光标跳到下个字的开头</td>
+</tr>
+
+<tr>
+<td class="left">e</td>
+<td class="left">光标跳到下个字的字尾</td>
+</tr>
+
+<tr>
+<td class="left">b</td>
+<td class="left">光标回到上个字的开头</td>
+</tr>
+
+<tr>
+<td class="left">x</td>
+<td class="left">每按一次,删除光标所在位置的一个字符</td>
+</tr>
+
+<tr>
+<td class="left">nx</td>
+<td class="left">如"3x"表示删除光标所在位置开始的3个字符</td>
+</tr>
+
+<tr>
+<td class="left">X</td>
+<td class="left">删除光标所在位置的前一个字符</td>
+</tr>
+
+<tr>
+<td class="left">nX</td>
+<td class="left">如"3X"表示删除光标所在位置的前3个字符</td>
+</tr>
+
+<tr>
+<td class="left">dd</td>
+<td class="left">删除光标所在行</td>
+</tr>
+
+<tr>
+<td class="left">ndd</td>
+<td class="left">如"3dd"表示删除光标所在行开始的3行字符</td>
+</tr>
+
+<tr>
+<td class="left">yw</td>
+<td class="left">将光标所在之处到字尾的字符复制到缓冲区</td>
+</tr>
+
+<tr>
+<td class="left">nyw</td>
+<td class="left">复制n个字符到缓冲区</td>
+</tr>
+
+<tr>
+<td class="left">p</td>
+<td class="left">将缓冲区里的内容写到光标所在位置</td>
+</tr>
+
+<tr>
+<td class="left">r</td>
+<td class="left">替换光标所在处的字符</td>
+</tr>
+
+<tr>
+<td class="left">R</td>
+<td class="left">替换贯标所在处的字符，直到按下"Esc"为止</td>
+</tr>
+
+<tr>
+<td class="left">u</td>
+<td class="left">撤销命令，可多次撤销</td>
+</tr>
+
+<tr>
+<td class="left">Ctrl+g</td>
+<td class="left">列出光标所在行的的行号</td>
+</tr>
+
+<tr>
+<td class="left">nG</td>
+<td class="left">表示移动光标到文本的第n行行首</td>
+</tr>
+
+<tr>
+<td class="left">ZZ</td>
+<td class="left">存盘退出</td>
+</tr>
+
+<tr>
+<td class="left">ZQ</td>
+<td class="left">不存盘退出</td>
+</tr>
+
+<tr>
+<td class="left">末行模式</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">:</td>
+<td class="left">先按Esc进入命令行模式再按Esc进入末行模式</td>
+</tr>
+
+<tr>
+<td class="left">set nu</td>
+<td class="left">开启每行的行号</td>
+</tr>
+
+<tr>
+<td class="left">set nonu</td>
+<td class="left">取消每行的行号</td>
+</tr>
+
+<tr>
+<td class="left">n</td>
+<td class="left">n代表数字，表示跳到n行</td>
+</tr>
+
+<tr>
+<td class="left">/关键字</td>
+<td class="left">先按"/",在输入关键字后回车查找字符（查找）,按n查找下一个</td>
+</tr>
+
+<tr>
+<td class="left">？关键字</td>
+<td class="left">类似"/关键字"</td>
+</tr>
+
+<tr>
+<td class="left">！命令</td>
+<td class="left">windows下运行dos命令，linux下运行shell命令</td>
+</tr>
+
+<tr>
+<td class="left">s /a/b</td>
+<td class="left">将光标所在行的第一个a替换为b</td>
+</tr>
+
+<tr>
+<td class="left">s /a/b/g</td>
+<td class="left">将光标所在行的a全部替换为b</td>
+</tr>
+
+<tr>
+<td class="left">w</td>
+<td class="left">保存修改的文件</td>
+</tr>
+
+<tr>
+<td class="left">w filename</td>
+<td class="left">保存并命名为filename</td>
+</tr>
+
+<tr>
+<td class="left">q</td>
+<td class="left">退出vi</td>
+</tr>
+
+<tr>
+<td class="left">q!</td>
+<td class="left">强制退出无法退出的vi</td>
+</tr>
+
+<tr>
+<td class="left">wq</td>
+<td class="left">保存并退出</td>
+</tr>
+</tbody>
+</table>
+	
+		<div class="center">
+
+			<!-- 评论框 start -->
+			<div class="ds-thread" data-thread-key="blog20150421" data-title="vi/vim编辑器的基本操作 " data-url="http://www.luxiaoyou.com/blog/2015/4/the-basic-opration-of-vi-editor.html"></div>
+			<!-- 评论框 end -->
+			<!-- 公共JS代码 start (一个网页只需插入一次) -->
+			<script type="text/javascript">
+				var duoshuoQuery = {short_name:"luxiaoyou"};
+				(function() {
+					var ds = document.createElement('script');
+					ds.type = 'text/javascript';ds.async = true;
+					ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+					ds.charset = 'UTF-8';
+					(document.getElementsByTagName('head')[0] 
+					|| document.getElementsByTagName('body')[0]).appendChild(ds);
+				})();
+			</script>
+			<!-- 公共JS代码 end -->
+
+		
+		</div>
+		<div id="home_linkbar">
+			<br>
+			<a href="../../../webpages/about.html"><img src="../../../images/blog-logo.png" width="36" height="36" alt="Youge'blog,welcome!!" title="友歌博客"/></a>
+			<div style="clear: both; margin: 0; width: 100%; ">Copyright ©2015 <a href="http://www.luxiaoyou.com">luxiaoyou.com</a></div>
+			
+		</div>
+	</div>
+
+	</body>
+	</html>

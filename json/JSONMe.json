@@ -1,0 +1,14 @@
+var JSONMyself= {
+				"name":"卢小友",
+				"pingyin":"luxiaoyou",
+				"webname":"Youge",
+				"sex":"男",
+				"birthday":"10月29日",
+				"phone":"00000",
+				"email":"contact@luxiaoyou.com",
+				"emailplus":"mailto:contact@luxiaoyou.com?cc=luxiaoyou@126.com&bcc=969156902@qq.com&subject=来自友歌博客-&body=感谢您对我的关注！请您在[来自友歌博客-]后写上您的主题!",
+				"sinaweibo":"http://weibo.com/yougelu",
+				"github":"https://github.com/luxiaoyou",
+				"baidujingyan":"http://jingyan.baidu.com/user/npublic/expList?un=灵勤",
+				"cnblogs":"http://www.cnblogs.com/youge"
+				};
