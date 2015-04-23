@@ -144,6 +144,8 @@
 		height: 60px;
 		width: 600px;
 		margin: 10px auto 10px auto;
+		padding: 5px 0px 0px 5px;
+		border-radius:8px;
 		}
 		.container_for_newsmode
 		{
@@ -185,9 +187,28 @@
 		/* 用于文章摘要 */
 		.BSHARE_TEXT
 		{
-		width:720px;
+		width:700px;
 		box-shadow: 0px 0px 8px #888;
 		border-radius:8px;
 		padding:10px 10px 10px 10px;
 		}
-		/* 用于文章摘要 */
+
+	    
+		/* 关于作者的信息 */
+		#postamble
+         {
+         width:480px;
+		 margin:25px 0px 25px 0px;
+         padding:10px 10px 10px 10px;
+         background-color:rgba(0, 0, 0, 0.04);
+         box-shadow: 0px 0px 8px #888;
+         border-radius:8px;
+        }
+		#aboutme
+         {
+		 margin:5px 5px 5px 5px;
+         padding:25px 25px 10px 25px;
+         background-color:rgba(0, 0, 0, 0.04);
+         box-shadow: 0px 0px 3px #888;
+         border-radius:8px;
+        }
