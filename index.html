@@ -2,10 +2,12 @@
 	<html>
 	<head>
 		<title>友歌博客 - 博客首页</title>
+		<meta name="keywords" content="卢小友,luxiaoyou,友歌博客" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/mode.css">
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<script type="text/javascript" charset="utf-8" src="json/JSONZhaiyaotext.json"></script>
+		<script type="text/javascript" charset="utf-8" src="json/JSONMe.json"></script>
 	</head>
 	<body>
 	<div id="youge_home">
@@ -23,19 +25,30 @@
 		<div id="home_main">
 
 			<div class="container_for_newsmode">
+
+			 <div class="newsmode">
+			 	<a href="blog/2015/4/the-basic-opration-of-vi-editor.html" title="点击阅读">windows下vi/vim编辑器的基本操作</a>
+				<p id="gvimtextpzaiyao" class="INDEX_BSHARE_TEXT"></p>
+				<script type="text/javascript">
+				document.getElementById("gvimtextpzaiyao").innerHTML=JSONText.gvimtext
+				</script>
+				<p>作者:<a id="authorgvim" href="#友歌博客">
+				<script type="text/javascript">document.getElementById("authorgvim").innerHTML=JSONMyself.youge</script>
+				<script type="text/javascript">document.getElementById("authorgvim").href=JSONMyself.about</script>
+				<script type="text/javascript">document.getElementById("authorgvim").title=JSONMyself.blog</script>
+				</a></p>
+			 </div>
 			 <div class="newsmode">
 			 	<a href="blog/2014/12/How-to-batch-download-bing's-background-picture.html" title="点击阅读">如何批量下载bing前20多天的背景图片</a>
 				<p id="bingtextpzaiyao" class="INDEX_BSHARE_TEXT"></p>
 				<script type="text/javascript">
 				document.getElementById("bingtextpzaiyao").innerHTML=JSONText.bingtext
 				</script>
-			 </div>
-			 <div class="newsmode">
-			 	<a href="blog/2015/4/the-basic-opration-of-vi-editor.html" title="点击阅读">windows下vi/vim编辑器的基本操作</a>
-				<p id="gvimtextpzaiyao" class="INDEX_BSHARE_TEXT"></p>
-				<script type="text/javascript">
-				document.getElementById("gvimtextpzaiyao").innerHTML=JSONText.gvimtext
-				</script>				
+				<p>作者:<a id="authorbingtext" href="#友歌博客">
+				<script type="text/javascript">document.getElementById("authorbingtext").innerHTML=JSONMyself.youge</script>
+				<script type="text/javascript">document.getElementById("authorbingtext").href=JSONMyself.about</script>
+				<script type="text/javascript">document.getElementById("authorbingtext").title=JSONMyself.blog</script>
+				</a></p>
 			 </div>
 			</div>
 
@@ -1387,7 +1400,7 @@ MH1/yVLk1fFA8umxVRldB0xiS55pCbkmSVfKP4+j/wANfWFXp/qf/TdLn0KzdWlps0kxYL08X28/
 T64zFgq0XuFpB/6Xt5Y5PO8O2vg6zTxM+u6D59z0DLc78VrRpDydP1Km/WX49LyDFNzPDCjVaYqM
 DZB2t/0kebpg5lSxPT+MqihUZpfPF47foPsunP1579UxmmMxGk1MQ8i4gW/97LrCLeCyg4pwu225
 O5/RVCt3B9J0sQWmrUJB4mVSdxbr9KYR1N2oa3OBBLvYoaqZFlzMvxuKwbmsdSEloaNka//Z'
- style="width:160px;height:225px;box-shadow: 0px 0px 10px #888;" title="卢小友"/>
+ style="width:160px;height:224px;box-shadow: 0px 0px 10px #888;" title="卢小友"/>
                 <p class="author">Author: <a href="webpages/about.html">卢小友</a></p>
 <!--                 <p class="date">Created: 2015-04-23 周四 22:08</p> -->
                 <p class="creator">Blog:<a href="http://www.luxiaoyou.com/">luxiaoyou.com</a></p>

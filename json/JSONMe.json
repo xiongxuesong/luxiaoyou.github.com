@@ -2,6 +2,7 @@ var JSONMyself= {
 				"name":"卢小友",
 				"pingyin":"luxiaoyou",
 				"webname":"Youge",
+				"youge":"友歌",
 				"sex":"男",
 				"birthday":"10月29日",
 				"phone":"00000",
@@ -10,5 +11,7 @@ var JSONMyself= {
 				"sinaweibo":"http://weibo.com/yougelu",
 				"github":"https://github.com/luxiaoyou",
 				"baidujingyan":"http://jingyan.baidu.com/user/npublic/expList?un=灵勤",
-				"cnblogs":"http://www.cnblogs.com/youge"
+				"cnblogs":"http://www.cnblogs.com/youge",
+				"about":"http://www.luxiaoyou.com/webpages/about.html",
+				"blog":"http://www.luxiaoyou.com"
 				};
