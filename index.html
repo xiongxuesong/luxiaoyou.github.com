@@ -5,6 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/mode.css">
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<script type="text/javascript" charset="utf-8" src="json/JSONZhaiyaotext.json"></script>
 	</head>
 	<body>
 	<div id="youge_home">
@@ -23,10 +24,18 @@
 
 			<div class="container_for_newsmode">
 			 <div class="newsmode">
-			 	<a href="blog/2014/12/How-to-batch-download-bing's-background-picture.html">如何批量下载bing前20多天的背景图片</a>
+			 	<a href="blog/2014/12/How-to-batch-download-bing's-background-picture.html" title="点击阅读">如何批量下载bing前20多天的背景图片</a>
+				<p id="bingtextpzaiyao" class="INDEX_BSHARE_TEXT"></p>
+				<script type="text/javascript">
+				document.getElementById("bingtextpzaiyao").innerHTML=JSONText.bingtext
+				</script>
 			 </div>
 			 <div class="newsmode">
-			 	<a href="blog/2015/4/the-basic-opration-of-vi-editor.html">windows下vi/vim编辑器的基本操作</a>
+			 	<a href="blog/2015/4/the-basic-opration-of-vi-editor.html" title="点击阅读">windows下vi/vim编辑器的基本操作</a>
+				<p id="gvimtextpzaiyao" class="INDEX_BSHARE_TEXT"></p>
+				<script type="text/javascript">
+				document.getElementById("gvimtextpzaiyao").innerHTML=JSONText.gvimtext
+				</script>				
 			 </div>
 			</div>
 
