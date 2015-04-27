@@ -1,4 +1,15 @@
-﻿		body
+﻿		.top
+		{
+		position:fixed;
+		display:block;
+		bottom:100px;
+		right:150px; 
+		width:32px;
+		height:11px;
+		cursor: pointer;
+		background-image: url("data:img/jpg;base64,R0lGODlhIAALANUAAPWXAfz//fOYA/WYAP3//P7+/P7+/vKZAP/9//SZAv3//vSZBPz/////+/KYA/v///SWAPKXAv3+//OaAvOZAPaZAP/9/vSXAP/8//7/+vWXA/7/+/GXAvKYAPSWAvv//v7+//KaAvSZAPOXBPKZAfGYAPKXAP7//fOYAP///fOYAf7////+/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BADoAwAALAAAAAAgAAsAAAZ7QNaqJRylhMTjMLlkOp+qaEHZRJ6uz2zLFD2QrAAUqeRQWbXMgbhbwh7JVeo5cC2HE+qFKR2irlFvIlwefGSATmJIFwl0XFsCRWYWjxRSiIxEjgZlDZZjSWySTYmBdRArpJaUpHQKDJ+ga5mGe2hxILcNkXJurbZzpUtBADs=");
+		}
+		body
 		{
 		background-image: url("../images/youge_bg.gif");
 		/* background-repeat: no-repeat; */
@@ -210,7 +221,7 @@
 		#aboutme
          {
 		 margin:5px 5px 5px 5px;
-         padding:25px 25px 10px 25px;
+         padding:10px 25px 10px 25px;
          background-color:rgba(0, 0, 0, 0.04);
          box-shadow: 0px 0px 3px #888;
          border-radius:8px;

@@ -1,4 +1,5 @@
 var JSONpic = {
 	"bingpic":"http://images.cnitblog.com/blog/629565/201412/112139351961701.png",
-	"gvimpic":"http://images.cnitblog.com/blog2015/629565/201504/232232187966193.png"
+	"gvimpic":"http://images.cnitblog.com/blog2015/629565/201504/232232187966193.png",
+	"emacspic":"http://images.cnitblog.com/blog2015/629565/201504/272326037248036.jpg"
 };

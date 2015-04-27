@@ -10,7 +10,7 @@
 		<link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
 		
 		<script type="text/javascript" charset="utf-8" src="../../../json/JSONZhaiyaotext.json"></script>
-		
+
 		<script src="../../../highlight/highlight.pack.js"></script>
 		<link id="myhref" rel="stylesheet" title="Default" href="../../../highlight/styles/monokai_sublime.css" />
 		<script>hljs.initHighlightingOnLoad();</script>
@@ -85,8 +85,12 @@
 		<div id="home_main">
 		<br>
 		<h2><span style="color: #000000;"><strong>如何批量下载bing的背景图片?</strong></span></h2>
-		作者:<a href="../../../webpages/about.html">Youge</a>&nbsp;&nbsp;&nbsp;&nbsp;发布于:2014-12-13 13:10&nbsp;&nbsp;
-		
+
+		作者:<a id="authortext" href="../../../webpages/about.html"></a>&nbsp;&nbsp;&nbsp;&nbsp;发布于:2014-12-13 13:10&nbsp;&nbsp;
+		<script type="text/javascript" charset="utf-8" src="../../../json/JSONMe.json"></script>
+		<script type="text/javascript">document.getElementById("authortext").innerHTML=JSONMyself.name</script>
+		<script type="text/javascript">document.getElementById("authorbingtext").href=JSONMyself.about</script>
+				
 		
 		<!--分享按钮-->
 		<p><div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-sharethis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div>
