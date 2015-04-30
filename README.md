@@ -5,6 +5,12 @@ luxiaoyou.com
 
 最新动态
 ====================
+
+###[Emacs 快速指南（Emacs原生中文手册）](http://www.luxiaoyou.com/blog/2015/4/a-simple-emacs-tutorial.html)
+
+>Emacs是一种强大的文本编辑器，颇受国外程序员和及其极客们的欢迎。Emacs不仅仅是一个编辑器，他是一个整合环境，或可称它为集成开发环境，这些功能如让使用者置身于全emacs功能的操作系统中。
+
+
 ### [windows下vi/vim编辑器的基本操作](http://www.luxiaoyou.com/blog/2015/4/the-basic-opration-of-vi-editor.html)
 
 >vi/vim一个高效移动，高效输入，高效阅读的可扩展的编辑器，或者说它是个开发工具，因为你完全可以配置出你想要的开发环境出来。当然前提是你必须学会vi/vim以及深入它，不经之间意你就爱上了它。
