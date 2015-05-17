@@ -1,6 +1,6 @@
 luxiaoyou.com
 ====================
-![http://weibo.com/yougelu/](http://service.t.sina.com.cn/widget/qmd/1813932610/4b6e507b/1.png)
+<an href="http://weibo.com/yougelu/">![http://weibo.com/yougelu/](http://service.t.sina.com.cn/widget/qmd/1813932610/4b6e507b/1.png)</a>
 
 
 欢迎来到[友歌博客](http://www.luxiaoyou.com),
